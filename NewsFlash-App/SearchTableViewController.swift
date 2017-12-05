@@ -93,7 +93,6 @@ class SearchTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     func performSearch(_ search: String) {
         guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/search/keyword/" + search) else {return}
-        print(feedURL)
         URLSession.shared.dataTask(with: feedURL) { (data, response, error) in
             guard let data = data else {return}
             do {
@@ -103,7 +102,6 @@ class SearchTableViewController: UIViewController, UITableViewDelegate, UITableV
             } catch let jsonErr {
                 print("Error serializing JSON:", jsonErr)
             }
-            print(self.eventSearchResults.count)
             DispatchQueue.main.async {
                 self.searchTable.reloadData()
             }
