@@ -4,5 +4,7 @@ target 'NewsFlash-App' do
 
   pod 'SDWebImage', '~> 4.0'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+  pod 'SwiftyJSON'
+  pod 'ParallaxHeader', '~> 2.0.0'
 
 end

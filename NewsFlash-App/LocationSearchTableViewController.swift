@@ -1,5 +1,5 @@
 //
-//  CategorySearchViewController.swift
+//  LocationSearchTableViewController.swift
 //  NewsFlash-App
 //
 //  Created by Entei Suzuki-Minami on 12/5/17.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class CategorySearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LocationSearchTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     
     @IBOutlet var searchTable: UITableView!
-    var category: String?
+    var location: String?
     var feedItems = [FeedItem]()
     
     struct FeedItem {
@@ -36,14 +37,13 @@ class CategorySearchViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = category!
-        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/search/category/" + (category?.lowercased())!) else {return}
+        self.title = location!
+        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/search/location/" + (location?.lowercased().replacingOccurrences(of: " ", with: "_"))!) else {return}
         URLSession.shared.dataTask(with: feedURL) { (data, response, error) in
             guard let data = data else {return}
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [String:Any]
                 guard let jsonEvents = json["events"] else { return }
-                //print(jsonEvents![2])
                 self.parseJsonEvents(list: jsonEvents as! NSArray)
             } catch let jsonErr {
                 print("Error serializing JSON:", jsonErr)
@@ -57,7 +57,17 @@ class CategorySearchViewController: UIViewController, UITableViewDelegate, UITab
         searchTable.dataSource = self
         // Do any additional setup after loading the view.
     }
+    
+    func parseJsonEvents(list: NSArray){
+        for i in 0...(list.count - 1) {
+            if let event = list[i] as? [String:Any] {
+                let eventStruct = FeedItem(json: event)
+                feedItems.append(eventStruct)
+            }
+        }
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,23 +79,11 @@ class CategorySearchViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categorySearchCell", for: indexPath) as! FeedViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "locationSearchCell", for: indexPath) as! FeedViewCell
         let i = indexPath.row
         cell.headline.text = feedItems[i].title
         cell.date.text = feedItems[i].date
-        //cell.category.text = feedItems[i].category
-        
-        
-        // Because it seems a bit weird to display category in a category search, let's
-        //    use this space for displaying location
-        if (feedItems[i].location != "N/A") {
-            cell.category.text = feedItems[i].location.replacingOccurrences(of: " of America", with: "").replacingOccurrences(of: "Republic of ", with: "")
-        } else if (feedItems[i].location == "United States of America") {
-            cell.category.text = "United States"
-        }
-        else {
-            cell.category.text = ""
-        }
+        cell.category.text = feedItems[i].category
         cell.thumbnail.sd_setImage(with: URL(string: feedItems[i].imageURL), placeholderImage: nil)
         
         cell.URI = feedItems[i].URI
@@ -107,14 +105,6 @@ class CategorySearchViewController: UIViewController, UITableViewDelegate, UITab
         }
     }
 
-    func parseJsonEvents(list: NSArray){
-        for i in 0...(list.count - 1) {
-            if let event = list[i] as? [String:Any] {
-                let eventStruct = FeedItem(json: event)
-                feedItems.append(eventStruct)
-            }
-        }
-    }
     /*
     // MARK: - Navigation
 

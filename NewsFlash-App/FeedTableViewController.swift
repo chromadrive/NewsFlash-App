@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class FeedTableViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource{
+class FeedTableViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var feedTable: UITableView!
     var feedItems = [FeedItem]()

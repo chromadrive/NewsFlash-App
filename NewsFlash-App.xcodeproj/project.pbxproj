@@ -15,7 +15,19 @@
 		6B0EC7AA1FD623FE001A107E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0EC7A81FD623FE001A107E /* LaunchScreen.storyboard */; };
 		6B0EC7B51FD623FE001A107E /* NewsFlash_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0EC7B41FD623FE001A107E /* NewsFlash_AppTests.swift */; };
 		6B0EC7C01FD623FE001A107E /* NewsFlash_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0EC7BF1FD623FE001A107E /* NewsFlash_AppUITests.swift */; };
+		6B170FE21FD72E5800992E15 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B170FE11FD72E5800992E15 /* MapKit.framework */; };
+		6B170FE81FD7302000992E15 /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B170FE71FD7302000992E15 /* LocationSelectorViewController.swift */; };
+		6B170FEA1FD732A400992E15 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B170FE91FD732A400992E15 /* LocationSearchTableViewController.swift */; };
+		6B170FEE1FD740C200992E15 /* locations.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B170FEB1FD740C100992E15 /* locations.png */; };
+		6B170FEF1FD740C200992E15 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B170FEC1FD740C100992E15 /* feed.png */; };
+		6B170FF01FD740C200992E15 /* categories.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B170FED1FD740C200992E15 /* categories.png */; };
+		6B170FF21FD7439900992E15 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B170FF11FD7439900992E15 /* list.png */; };
 		6BB2C4681FD71199003D11CC /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2C4671FD71199003D11CC /* ArticleViewController.swift */; };
+		6BB2C46D1FD71DC5003D11CC /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2C4691FD71DC5003D11CC /* arrow.png */; };
+		6BB2C46E1FD71DC5003D11CC /* arrow_g.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2C46A1FD71DC5003D11CC /* arrow_g.png */; };
+		6BB2C46F1FD71DC5003D11CC /* favorite_gold_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2C46B1FD71DC5003D11CC /* favorite_gold_sel.png */; };
+		6BB2C4701FD71DC5003D11CC /* favorite_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2C46C1FD71DC5003D11CC /* favorite_gold.png */; };
+		6BCDA25C1FD724E200062FB6 /* StarredTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDA25B1FD724E200062FB6 /* StarredTableViewController.swift */; };
 		6BD3F08E1FD6798300D8408D /* thumb_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD3F08D1FD6798200D8408D /* thumb_placeholder.png */; };
 		6BD3F0901FD68EBA00D8408D /* newsflash-splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD3F08F1FD68EBA00D8408D /* newsflash-splash.png */; };
 		6BD6E8791FD6981C00B15895 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3F0911FD6924B00D8408D /* SearchTableViewController.swift */; };
@@ -59,7 +71,19 @@
 		6B0EC7BB1FD623FE001A107E /* NewsFlash-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NewsFlash-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0EC7BF1FD623FE001A107E /* NewsFlash_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFlash_AppUITests.swift; sourceTree = "<group>"; };
 		6B0EC7C11FD623FE001A107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B170FE11FD72E5800992E15 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6B170FE71FD7302000992E15 /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
+		6B170FE91FD732A400992E15 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		6B170FEB1FD740C100992E15 /* locations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locations.png; sourceTree = "<group>"; };
+		6B170FEC1FD740C100992E15 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		6B170FED1FD740C200992E15 /* categories.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = categories.png; sourceTree = "<group>"; };
+		6B170FF11FD7439900992E15 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		6BB2C4671FD71199003D11CC /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		6BB2C4691FD71DC5003D11CC /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		6BB2C46A1FD71DC5003D11CC /* arrow_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_g.png; sourceTree = "<group>"; };
+		6BB2C46B1FD71DC5003D11CC /* favorite_gold_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_gold_sel.png; sourceTree = "<group>"; };
+		6BB2C46C1FD71DC5003D11CC /* favorite_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_gold.png; sourceTree = "<group>"; };
+		6BCDA25B1FD724E200062FB6 /* StarredTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredTableViewController.swift; sourceTree = "<group>"; };
 		6BD3F08D1FD6798200D8408D /* thumb_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb_placeholder.png; sourceTree = "<group>"; };
 		6BD3F08F1FD68EBA00D8408D /* newsflash-splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newsflash-splash.png"; sourceTree = "<group>"; };
 		6BD3F0911FD6924B00D8408D /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B170FE21FD72E5800992E15 /* MapKit.framework in Frameworks */,
 				B8829E9606FFB0F8EE4DB332 /* Pods_NewsFlash_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,10 +152,13 @@
 			children = (
 				6B0EC79C1FD623FE001A107E /* AppDelegate.swift */,
 				6B0EC79E1FD623FE001A107E /* ViewController.swift */,
+				6B170FE71FD7302000992E15 /* LocationSelectorViewController.swift */,
 				6BD6E87E1FD6A82500B15895 /* CategorySelectorViewController.swift */,
 				6B0EC7A01FD623FE001A107E /* Main.storyboard */,
 				6BD6E8801FD6AC6900B15895 /* CategorySearchViewController.swift */,
 				6BF8C5B61FD62D6400E852FF /* FeedTableViewController.swift */,
+				6BCDA25B1FD724E200062FB6 /* StarredTableViewController.swift */,
+				6B170FE91FD732A400992E15 /* LocationSearchTableViewController.swift */,
 				6BD3F0911FD6924B00D8408D /* SearchTableViewController.swift */,
 				6BB2C4671FD71199003D11CC /* ArticleViewController.swift */,
 				6B0EC7A61FD623FE001A107E /* Assets.xcassets */,
@@ -164,6 +192,14 @@
 		6BD3F08C1FD678F500D8408D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6BB2C46A1FD71DC5003D11CC /* arrow_g.png */,
+				6B170FF11FD7439900992E15 /* list.png */,
+				6B170FED1FD740C200992E15 /* categories.png */,
+				6B170FEC1FD740C100992E15 /* feed.png */,
+				6B170FEB1FD740C100992E15 /* locations.png */,
+				6BB2C4691FD71DC5003D11CC /* arrow.png */,
+				6BB2C46B1FD71DC5003D11CC /* favorite_gold_sel.png */,
+				6BB2C46C1FD71DC5003D11CC /* favorite_gold.png */,
 				6BD3F08D1FD6798200D8408D /* thumb_placeholder.png */,
 				6BD3F08F1FD68EBA00D8408D /* newsflash-splash.png */,
 			);
@@ -173,6 +209,7 @@
 		AC3FFFFC1D15B7CB0D672EAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B170FE11FD72E5800992E15 /* MapKit.framework */,
 				B214F6269DE3C1781314A4A2 /* Pods_NewsFlash_App.framework */,
 			);
 			name = Frameworks;
@@ -259,6 +296,11 @@
 					6B0EC7981FD623FE001A107E = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6B0EC7AF1FD623FE001A107E = {
 						CreatedOnToolsVersion = 9.1;
@@ -297,11 +339,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB2C46F1FD71DC5003D11CC /* favorite_gold_sel.png in Resources */,
 				6B0EC7AA1FD623FE001A107E /* LaunchScreen.storyboard in Resources */,
+				6B170FEE1FD740C200992E15 /* locations.png in Resources */,
+				6B170FF01FD740C200992E15 /* categories.png in Resources */,
+				6B170FF21FD7439900992E15 /* list.png in Resources */,
+				6BB2C4701FD71DC5003D11CC /* favorite_gold.png in Resources */,
+				6BB2C46D1FD71DC5003D11CC /* arrow.png in Resources */,
+				6BB2C46E1FD71DC5003D11CC /* arrow_g.png in Resources */,
 				6BD3F0901FD68EBA00D8408D /* newsflash-splash.png in Resources */,
 				6B0EC7A71FD623FE001A107E /* Assets.xcassets in Resources */,
 				6BD3F08E1FD6798300D8408D /* thumb_placeholder.png in Resources */,
 				6B0EC7A21FD623FE001A107E /* Main.storyboard in Resources */,
+				6B170FEF1FD740C200992E15 /* feed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,12 +395,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NewsFlash-App/Pods-NewsFlash-App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/ParallaxHeader/ParallaxHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -382,6 +436,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B170FEA1FD732A400992E15 /* LocationSearchTableViewController.swift in Sources */,
+				6B170FE81FD7302000992E15 /* LocationSelectorViewController.swift in Sources */,
 				6BF8C5B51FD62C3B00E852FF /* FeedViewCell.swift in Sources */,
 				6BD6E8791FD6981C00B15895 /* SearchTableViewController.swift in Sources */,
 				6B0EC79F1FD623FE001A107E /* ViewController.swift in Sources */,
@@ -392,6 +448,7 @@
 				6BB2C4681FD71199003D11CC /* ArticleViewController.swift in Sources */,
 				6B0EC79D1FD623FE001A107E /* AppDelegate.swift in Sources */,
 				6B0EC7A51FD623FE001A107E /* NewsFlash_App.xcdatamodeld in Sources */,
+				6BCDA25C1FD724E200062FB6 /* StarredTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
