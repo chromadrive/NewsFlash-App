@@ -108,16 +108,14 @@ class FeedTableViewController:  UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndexPath = indexPath
-        //performSegue(withIdentifier: "ShowArticleSegue", sender: feedTable)
+        performSegue(withIdentifier: "showArticleSegue", sender: feedTable)
     }
     
-    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? ArticleViewController {
             dest.URI = feedItems[(selectedIndexPath?.row)!].URI
         }
     }
-     */
     
     func parseJsonEvents(list: NSArray){
         for i in 0...(list.count - 1) {

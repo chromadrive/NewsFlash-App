@@ -15,6 +15,7 @@
 		6B0EC7AA1FD623FE001A107E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0EC7A81FD623FE001A107E /* LaunchScreen.storyboard */; };
 		6B0EC7B51FD623FE001A107E /* NewsFlash_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0EC7B41FD623FE001A107E /* NewsFlash_AppTests.swift */; };
 		6B0EC7C01FD623FE001A107E /* NewsFlash_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0EC7BF1FD623FE001A107E /* NewsFlash_AppUITests.swift */; };
+		6BB2C4681FD71199003D11CC /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2C4671FD71199003D11CC /* ArticleViewController.swift */; };
 		6BD3F08E1FD6798300D8408D /* thumb_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD3F08D1FD6798200D8408D /* thumb_placeholder.png */; };
 		6BD3F0901FD68EBA00D8408D /* newsflash-splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD3F08F1FD68EBA00D8408D /* newsflash-splash.png */; };
 		6BD6E8791FD6981C00B15895 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3F0911FD6924B00D8408D /* SearchTableViewController.swift */; };
@@ -58,6 +59,7 @@
 		6B0EC7BB1FD623FE001A107E /* NewsFlash-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NewsFlash-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0EC7BF1FD623FE001A107E /* NewsFlash_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFlash_AppUITests.swift; sourceTree = "<group>"; };
 		6B0EC7C11FD623FE001A107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB2C4671FD71199003D11CC /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		6BD3F08D1FD6798200D8408D /* thumb_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb_placeholder.png; sourceTree = "<group>"; };
 		6BD3F08F1FD68EBA00D8408D /* newsflash-splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newsflash-splash.png"; sourceTree = "<group>"; };
 		6BD3F0911FD6924B00D8408D /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				6BD6E8801FD6AC6900B15895 /* CategorySearchViewController.swift */,
 				6BF8C5B61FD62D6400E852FF /* FeedTableViewController.swift */,
 				6BD3F0911FD6924B00D8408D /* SearchTableViewController.swift */,
+				6BB2C4671FD71199003D11CC /* ArticleViewController.swift */,
 				6B0EC7A61FD623FE001A107E /* Assets.xcassets */,
 				6B0EC7A81FD623FE001A107E /* LaunchScreen.storyboard */,
 				6B0EC7AB1FD623FE001A107E /* Info.plist */,
@@ -386,6 +389,7 @@
 				6BF8C5B71FD62D6400E852FF /* FeedTableViewController.swift in Sources */,
 				6BD6E87F1FD6A82500B15895 /* CategorySelectorViewController.swift in Sources */,
 				6BD6E8811FD6AC6900B15895 /* CategorySearchViewController.swift in Sources */,
+				6BB2C4681FD71199003D11CC /* ArticleViewController.swift in Sources */,
 				6B0EC79D1FD623FE001A107E /* AppDelegate.swift in Sources */,
 				6B0EC7A51FD623FE001A107E /* NewsFlash_App.xcdatamodeld in Sources */,
 			);

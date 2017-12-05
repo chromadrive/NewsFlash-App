@@ -67,18 +67,17 @@ class SearchTableViewController: UIViewController, UITableViewDelegate, UITableV
         return 120
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndexPath = indexPath
-        //performSegue(withIdentifier: "ShowArticleSegue", sender: feedTable)
+        performSegue(withIdentifier: "showArticleSegue", sender: searchTable)
     }
     
-    /*
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if let dest = segue.destination as? ArticleViewController {
-            dest.URI = feedItems[(selectedIndexPath?.row)!].URI
-         }
-     }
-     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ArticleViewController {
+            dest.URI = eventSearchResults[(selectedIndexPath?.row)!].URI
+        }
+    }
     
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

@@ -92,6 +92,17 @@ class CategorySearchViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndexPath = indexPath
+        performSegue(withIdentifier: "showArticleSegue", sender: searchTable)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ArticleViewController {
+            dest.URI = feedItems[(selectedIndexPath?.row)!].URI
+        }
+    }
 
     func parseJsonEvents(list: NSArray){
         for i in 0...(list.count - 1) {

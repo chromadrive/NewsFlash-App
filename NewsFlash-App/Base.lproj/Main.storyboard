@@ -85,6 +85,30 @@
             </objects>
             <point key="canvasLocation" x="1112.8" y="1283.2083958020989"/>
         </scene>
+        <!--Article View Controller-->
+        <scene sceneID="RJe-0d-uC3">
+            <objects>
+                <viewController id="fPb-eK-ZWR" customClass="ArticleViewController" customModule="NewsFlash_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wry-Ia-M6v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Article View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHh-J9-YAJ">
+                                <rect key="frame" x="142" y="121" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GJU-Jk-R1j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOs-X7-HVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="1283"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WeS-sv-J4P">
             <objects>
@@ -99,7 +123,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaE-86-7wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="2058"/>
+            <point key="canvasLocation" x="310" y="2058"/>
         </scene>
         <!--Category Search-->
         <scene sceneID="CWP-ue-FUg">
@@ -110,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CTO-ua-ue7">
-                                <rect key="frame" x="-0.5" y="64" width="375" height="603"/>
+                                <rect key="frame" x="-0.5" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categorySearchCell" rowHeight="120" id="MPE-X4-X3I" customClass="FeedViewCell" customModule="NewsFlash_App" customModuleProvider="target">
@@ -184,11 +208,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchTable" destination="CTO-ua-ue7" id="Z55-KE-zvQ"/>
+                        <segue destination="fPb-eK-ZWR" kind="show" identifier="showArticleSegue" id="IGv-J5-pDO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucg-XQ-zHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="2058"/>
+            <point key="canvasLocation" x="1113" y="2058"/>
         </scene>
         <!--Feed-->
         <scene sceneID="TOs-uS-uYz">
@@ -271,6 +296,7 @@
                     <navigationItem key="navigationItem" title="Feed" id="CZ3-0E-5BC"/>
                     <connections>
                         <outlet property="feedTable" destination="myL-f1-j7J" id="gG9-Wd-flU"/>
+                        <segue destination="fPb-eK-ZWR" kind="show" identifier="showArticleSegue" id="6js-on-o1f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8q-dW-Pd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -384,6 +410,7 @@
                     <connections>
                         <outlet property="searchDisplayController" destination="0rb-IQ-90j" id="orT-52-Zgj"/>
                         <outlet property="searchTable" destination="e8X-34-Dsi" id="qr0-CY-Qo1"/>
+                        <segue destination="fPb-eK-ZWR" kind="show" identifier="showArticleSegue" id="2OC-2d-A4r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pN-v7-10Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -432,10 +459,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbS-qf-d9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-566" y="466"/>
+            <point key="canvasLocation" x="-1319" y="466"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QGG-Sc-nve"/>
+        <segue reference="nKf-SI-kEv"/>
+        <segue reference="IGv-J5-pDO"/>
     </inferredMetricsTieBreakers>
 </document>
