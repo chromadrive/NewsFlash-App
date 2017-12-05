@@ -8,14 +8,17 @@
 
 import UIKit
 import CoreData
+import ChameleonFramework
+
+var triadicColorsArray = ColorSchemeOf(ColorScheme.triadic, color: UIColor.flatLimeDark, isFlatScheme: true)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatLimeDark, with: UIContentStyle.contrast)
         // Override point for customization after application launch.
         return true
     }

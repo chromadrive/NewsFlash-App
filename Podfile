@@ -3,6 +3,6 @@ target 'NewsFlash-App' do
   use_frameworks!
 
   pod 'SDWebImage', '~> 4.0'
-  pod 'ChameleonFramework/Swift'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
 end
