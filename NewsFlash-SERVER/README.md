@@ -4,7 +4,11 @@ Backend for the NewsFlash app, written in Python and hosted on Heroku. Built wit
 
 _Part of a CS198-001 Project by [@chromadrive](github.com/chromadrive) [@zeyanaAM](github.com/zeyanaam) and [@aaronhoby](github.com/aaronhoby)_
 
-This API is hosted live at [http://newsapp-backend2.herokuapp.com/](http://newsapp-backend2.herokuapp.com/) ! Works better than building this source and running it yourself :)
+## Super Duper Important Info!
+
+The code included in this folder is incomplete (as I do not have access to one of the computers I used to write part of the API at the time of submission) and may not properly compile. Please refer to our distribution version on our dedicated server repo for reference and more information: [https://github.com/chromadrive/NewsFlash-backend](https://github.com/chromadrive/NewsFlash-backend)
+
+Also, this API is hosted live at [http://newsapp-backend2.herokuapp.com/](http://newsapp-backend2.herokuapp.com/) ! Works better than building this source and running it yourself :)
 
 ## Usage
 
