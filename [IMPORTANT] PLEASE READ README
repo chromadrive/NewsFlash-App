@@ -1,0 +1,7 @@
+Please read README.md; there's some very important stuff in there about what to grade, but TL;DR:
+  - Run NewsFlash-CLIENT first
+    (that's the live version)
+  - If that doesn't work, run NewsFlash-CLIENT-CACHED
+    (that's the cached version, but the app is the same)
+    - If you end up grading the cached version, please see readme.md for example search/browse queries
+  - The server (NewsFlash-SERVER) is missing a few important files and will likely not run
