@@ -120,9 +120,9 @@ class ArticleViewController: UIViewController {
         var headertext : String?
         var summarytext : String?
         if let urievent = URI {
-            link = "https://newsapp-backend2.herokuapp.com/cache/event/" + urievent
+            link = "https://newsapp-backend2.herokuapp.com/event/" + urievent
         } else {
-            link = "https://newsapp-backend2.herokuapp.com/cache/event/"
+            link = "https://newsapp-backend2.herokuapp.com/event/"
         }
         
         let url = URL(string: link)!

@@ -37,7 +37,7 @@ class CategorySearchViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = category!
-        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/search/category/" + (category?.lowercased())!) else {return}
+        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/search/category/" + (category?.lowercased())!) else {return}
         URLSession.shared.dataTask(with: feedURL) { (data, response, error) in
             guard let data = data else {return}
             do {

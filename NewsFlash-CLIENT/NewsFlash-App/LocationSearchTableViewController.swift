@@ -38,7 +38,7 @@ class LocationSearchTableViewController: UIViewController, UITableViewDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = location!
-        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/search/location/" + (location?.lowercased().replacingOccurrences(of: " ", with: "_"))!) else {return}
+        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/search/location/" + (location?.lowercased().replacingOccurrences(of: " ", with: "_"))!) else {return}
         URLSession.shared.dataTask(with: feedURL) { (data, response, error) in
             guard let data = data else {return}
             do {

@@ -6,6 +6,8 @@ _CS198-001 Project by [@chromadrive](github.com/chromadrive) [@zeyanaAM](github.
 
 The backend code included is incomplete and may not run properly, please see our backend's [development repo](https://github.com/chromadrive/NewsFlash-backend) or the `readme.md` in the backend folder for more info.
 
+Also, the live version of our backend is currently hosted on a free Heroku instance and therefore is a bit slow, especially when fetching events. Please keep that in mind if testing the live app.
+
 But the main reason you're here is the iOS app, isn't it?
 
 ## Getting Started

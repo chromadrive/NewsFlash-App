@@ -91,7 +91,7 @@ class SearchTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func performSearch(_ search: String) {
-        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/search/keyword/" + search) else {return}
+        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/search/keyword/" + search) else {return}
         URLSession.shared.dataTask(with: feedURL) { (data, response, error) in
             guard let data = data else {return}
             do {

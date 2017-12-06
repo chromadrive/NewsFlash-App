@@ -39,7 +39,7 @@ class FeedTableViewController:  UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/cache/feed/") else {return}
+        guard let feedURL = URL(string: "https://newsapp-backend2.herokuapp.com/feed/") else {return}
         URLSession.shared.dataTask(with: feedURL) { (data, response, error) in
             guard let data = data else {return}
             do {
