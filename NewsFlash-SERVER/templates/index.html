@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>NewsFlash Backend API</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="css/skeleton.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <h1>NewsFlash Backend API</h1>
+
+      <p><em>Part of a CS198-001 Project by <a href="github.com/chromadrive">@chromadrive</a> <a href="github.com/zeyanaam">@zeyanaAM</a> and <a href="github.com/aaronhoby">@aaronhoby</a></em></p>
+      <h2 id="usage">Usage</h2>
+
+    <ul>
+    <li><code>/feed/</code> returns the JSON representation of the frontpage feed.</li>
+
+    <li><code>/search/[TYPE]/[QUERY]</code> returns the JSON representation of a searched feed. <code>[TYPE]</code> can be either Keyword, Location, or Category, where words are seperated by either <code>_</code> or <code>%20</code>
+
+
+    <ul>
+    <li>See notes on valid categories below</li></ul>
+    </li>
+
+    <li><code>/event/[URI]</code> takes in an event URI of the form <code>lang-####</code> and returns a JSON representation of the article.</li>
+    </ul>
+
+    <h2 id="format">Format</h2>
+
+    <p>Feeds (main feed, search):</p>
+
+    <ul>
+    <li><code>events</code>
+
+
+    <ul>
+    <li>For each event:</li>
+
+    <li><code>URI</code></li>
+
+    <li><code>category</code></li>
+
+    <li><code>date</code></li>
+
+    <li><code>image</code></li>
+
+    <li><code>location</code></li>
+
+    <li><code>socialScore</code></li>
+
+    <li><code>title</code></li></ul>
+    </li>
+    </ul>
+
+    <p>Events:</p>
+
+    <ul>
+    <li><code>event</code>
+
+
+    <ul>
+    <li><code>title</code></li>
+
+    <li><code>URI</code></li>
+
+    <li><code>articles</code> (a list of strings)</li>
+
+    <li><code>category</code></li>
+
+    <li><code>date</code></li>
+
+    <li><code>image</code></li>
+
+    <li><code>keywords</code> (a list of strings)</li>
+
+    <li><code>location</code></li>
+
+    <li><code>socialScore</code></li>
+
+    <li><code>summary</code></li></ul>
+    </li>
+    </ul>
+
+    <h2 id="cache">Cache</h2>
+
+    <p>For testing purposes, we've cached a version of the backend with events around 11/28-12/2. It can be accessed by putting <code>/cache/</code> in front of every call (for example, accessing an event would be <code>/cache/event/[URI]</code>. </p>
+
+    <p>Some searches are also cached:</p>
+
+    <ul>
+    <li>Keyword: <code>Trump</code>, <code>iPhone</code>, <code>Star Wars</code>, <code>Black Friday</code></li>
+
+    <li>Location: <code>United States</code>, <code>United Kingdom</code>, <code>Saudi Arabia</code>, <code>China</code></li>
+
+    <li>Category: <code>Society</code>, <code>Science</code>, <code>Arts</code></li>
+    </ul>
+
+    <p>Remember to replace spaces with <code>_</code> or <code>%20</code>!</p>
+
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
