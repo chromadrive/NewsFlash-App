@@ -75,27 +75,8 @@ class FeedTableViewController:  UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath) as! FeedViewCell
         let i = indexPath.row
         cell.headline.text = feedItems[i].title
-        //cell.location.text = feedItems[i].location
         cell.date.text = feedItems[i].date
         cell.category.text = feedItems[i].category
-        //cell.thumbnail.image = feedImages[i]
-        /*
-        DispatchQueue.main.async {
-            let url = URL(string: self.feedItems[i].imageURL)
-            if url != nil {
-                let imgData = try? Data(contentsOf: url!)
-                if imgData != nil{
-                    cell.thumbnail.image = UIImage(data: imgData!)
-                }
-                else{
-                    cell.thumbnail.image = UIImage(data: self.imgDataPlaceholder!)
-                }
-            } else {
-                cell.thumbnail.image = UIImage(data: self.imgDataPlaceholder!)
-            }
-        }*/
-        
-        //cell.thumbnail.sd_setImage(with: URL(string: feedItems[i].imageURL), placeholderImage: UIImage(named: "thumb_placeholder.png"))
         cell.thumbnail.sd_setImage(with: URL(string: feedItems[i].imageURL), placeholderImage: nil)
 
         cell.URI = feedItems[i].URI
@@ -126,25 +107,6 @@ class FeedTableViewController:  UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-//    func downloadImages() {
-//        let urlPlaceholder = URL(string: "https://via.placeholder.com/200x200")
-//        let imgDataPlaceholder = try? Data(contentsOf: urlPlaceholder!)
-//        for i in 0...(feedItems.count - 1) {
-//            print(feedItems[i].imageURL)
-//            let url = URL(string: feedItems[i].imageURL)
-//            if url != nil {
-//                let imgData = try? Data(contentsOf: url!)
-//                if imgData != nil{
-//                    feedImages.append(UIImage(data: imgData!)!)
-//                }
-//                else{
-//                    feedImages.append(UIImage(data: imgDataPlaceholder!)!)
-//                }
-//            } else {
-//                feedImages.append(UIImage(data: imgDataPlaceholder!)!)
-//            }
-//        }
-//    }
 
     /*
     // MARK: - Navigation

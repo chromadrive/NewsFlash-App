@@ -104,11 +104,6 @@ class ArticleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*do {
-            self.title = URI!
-        } catch let loadErr {
-            print("Error loading article:", loadErr)
-        }*/
         favButton.backgroundColor = UIColor.white
         imageView.contentMode = .scaleAspectFill
         scrollView.parallaxHeader.view = imageView
@@ -192,25 +187,6 @@ class ArticleViewController: UIViewController {
                         // Do something in response to error condition
                     }
                     
-                    
-                    
-                    
-                    
-                    
-                    //                    var src_count : Int = 1
-                    //                    var buttonX: CGFloat = 20  // our Starting Offset, could be 0
-                    //                    let buttonY : Int = Int(self.summary.bounds.size.height) + 30
-                    //                    for _ in self.articles! {
-                    //                        let sourceButton = UIButton(frame: CGRect(x: Int(buttonX), y: buttonY, width: 30, height: 30))
-                    //                        buttonX = buttonX + 30
-                    //
-                    //                        sourceButton.setTitle("[\(src_count)]", for: .normal)
-                    //                        sourceButton.setTitleColor(.blue, for: .normal)
-                    //                        sourceButton.addTarget(self, action: sourceButtonPressed(_:)), for: UIControlEvents.touchUpInside)
-                    //
-                    //                        self.view.addSubview(sourceButton)
-                    //                        src_count += 1
-                    //                    }
                     
                 }
                 
